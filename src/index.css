@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  /* MathML font styling for crisp native rendering */
+  math {
+    font-family: "Cambria Math", "STIX Two Math", "Latin Modern Math", "TeX Gyre Termes Math", serif;
+    font-size: 1.08em;
+    direction: ltr;
+  }
+
+  math [displaystyle="true"] {
+    display: inline-block;
+    padding: 0.25rem 0;
+  }
+
+  /* HTML MathML elements inside rendered questions */
+  .math-content math {
+    vertical-align: middle;
+  }
+
+  .math-content h3 {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+    font-weight: 500;
+  }
+
+  .math-content ol, .math-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .math-content p {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.6);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Acadza ReportFix",
+  "description": "AI-powered student report triage engine and faculty review console for JEE/NEET question defects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
